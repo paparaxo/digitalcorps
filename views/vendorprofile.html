@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/profile.css">
+    <title>Navbar with Sidebar</title>
+
+</head>
+<body>
+  {{navbar}}
+  
+  <div class="container2">
+    <p style="text-align:center">vendor Profile Card</p>
+    <div class="card">
+    
+        <p style="text-align:center">Vendor Profile Card</p>
+      <img src="../assets/svg/vendor.svg" alt="John" style="width:100%;height:300px">
+      <h2><small class="title">Company Name</small>: {{companyname}}</h2>
+      <p class="title"><small>Company Website</small>: <a href="{{website}}" target="_blank">{{website}}</a></p>
+      <p><small>Company Email</small>: {{companyemail}}</p>
+      <p><small>Location Countries</small>: {{countries}}</p>
+      <p><small>Location Cities</small>: {{cities}}</p>
+      <p><small>Number Of Employees</small>: {{employees}}</p>
+      <p><small>Year Established:  </small>{{established}}</p>
+    <p><small>Contact Telephone Number</small>: {{phone}}</p>
+      <br><br>
+      <h4>Address</h4>
+      <p><small>{{address}}</small></p>
+      
+      <p><a href="./updatevendor.html?id={{id}}"><button>Edit</button></a></p>
+    </div>
+    </div>
+    <!-- <div id="alertMessage" >
+      {{alerted}}
+     </div> -->
+</body>
+</html>
+
+

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi-tab Registration Form</title>
+  <link rel="stylesheet" href="../assets/css/register.css">
+
+
+</head>
+<body>
+  
+  <!-- Registeration page for client and Vendor (Babatunde) -->
+
+      <div class="container">
+        <h1 class="digid" style="background-color: black;color: #fff;"><b> DIGITALCORP <b></b></h1>
+   <b> Register as <b>
+  <input type="radio" id="tab1" name="tabs" checked>
+  <input type="radio" id="tab2" name="tabs">
+ 
+  <div class="tabs">
+    <label class="tab" for="tab1">client</label>
+    <label class="tab" for="tab2">vendor</label>
+   
+  </div>
+  <div class="tab-content">
+    <div id="content1">
+      <!-- Your form 1 content goes here -->
+      <h4>Register as client</h4>
+
+      <form action="./register.html" method="post">
+        <input type="text"   name="email" value={{email}} hidden> 
+        <input type="text"  name="password" value={{password}} hidden>
+        <input type="text"   name="type" value="client" hidden> 
+
+        <div class="row">
+            <div class="col">
+              <input type="text" name="firstname" required  class="form-control" placeholder="First Name" aria-label="First Name" >
+            </div>
+           
+        
+            <div class="col">
+                <input type="text" name="lastname" required class="form-control" placeholder="Last Name" aria-label="Last Name" >
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" required name="username"  placeholder="Username" aria-label="Username">
+            </div>
+           
+        
+            <div class="col">
+                <input type="text" class="form-control" required name="address" placeholder="Address" aria-label="Address">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <input type="text" name="phonenumber" required class="form-control" placeholder="phone number" aria-label="phone number">
+            </div>
+           
+        
+            <div class="col">
+                <input type="text" name="dateofbirth" required id="dob" class="form-control" onfocus="(this.type='date')"
+                onblur="(this.type='text')" placeholder="Enter date of birth" >
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+                <select name="gender"  id="gender" required style="    height: 41px;width: 100%;font-size: medium;"> 
+                    <option value="">--Select gender--</option>
+                 
+                          
+                                <option value="male">male   </option>
+                                <option value="female">female   </option>
+                               
+                           </select> 
+           
+            </div>
+            <div class="col">
+             
+                       <select name="country"  id="country" required style="    height: 41px;width: 100%;font-size: medium;"> 
+                        <option value="">--Select country--</option>
+                     
+                        {{countryoption}}
+                               </select> 
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" required name="z6" value="6_Portfolio Management Trading" id="v6" >
+            <label class="form-check-label" for="v6">Portfolio Management Trading</label>
+          </div>
+        </div>
+        
+          <div class="col">
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" name="z5" value="5_Artificial Intelligence" id="v5">
+            <label class="form-check-label" for="v5">Artificial Intelligence</label>
+          </div>
+        </div>
+        <div class="col">
+
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input"  name="z4" value="4_Data Transformation" id="v4" >
+            <label class="form-check-label" for="v4">Data Transformation</label>
+          </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" name="z3" value="3_Data Management" id="v3"  >
+          <label class="form-check-label" for="v3">Data Management</label>
+        </div>
+      </div>
+        <div class="col">
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input"  name="z2" value="2_Alternative Investment" id="v2">
+          <label class="form-check-label" for="v2">Alternative Investment</label>
+        </div>
+      </div>
+      <div class="col">
+
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input"  name="z1" value="1_Process Automation" id="v1" >
+          <label class="form-check-label" for="v1">Process Automation</label>
+        </div>
+        </div>
+      </div>
+          <!-- <div class="row">
+            <div class="col">
+          <div class="checkbox">
+            <div>
+                <p for="v6">Portfolio Management Trading</p>
+                <p for="v5">Artificial Intelligence</p>
+                <p for="v4">Data Transformation</p>
+                <p for="v3">Data Management</p>
+                <p for="v2">Alternative Investment</p> 
+                 <p for="v1">Process Automation</p>
+            </div>
+            <div>
+                <input type="checkbox" name="z6" value="6" id="v6" style="margin-bottom: 28px;">
+                <input type="checkbox" name="z5" value="5" id="v5" style="margin-bottom: 28px;">
+                <input type="checkbox"  name="z4" value="4" id="v4" style="margin-bottom: 28px;">
+                <input type="checkbox"  name="z3" value="3" id="v3" style="margin-bottom: 28px;">
+                <input type="checkbox"  name="z2" value="2" id="v2" style="margin-bottom: 28px;">
+                <input type="checkbox"  name="z1" value="1" id="v1" style="margin-bottom: 28px;">
+            </div>
+        </div>
+        </div>
+    </div> -->
+
+
+
+          
+          <button type="submit" class="btn">add</button>
+      </form>
+    
+    </div>
+    <div id="content2">
+      <!-- Your form 2 content goes here -->
+      <h4>Register as vendor</h4>
+      <form action="./register.html" method="post">
+   
+        <input type="text"   name="email" value={{email}} hidden> 
+        <input type="text"  name="password" value={{password}} hidden>
+        <input type="text"   name="type" value="vendor" hidden> 
+
+
+            <div class="row">
+            <div class="col">
+              <input type="text" required class="form-control" placeholder="Company Name" name="Companyname" aria-label="Company Name">
+            </div>
+            <div class="col">
+              <input type="text" required class="form-control" placeholder="Company Website" name="website" aria-label="Company Website">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <input type="year" required class="form-control" placeholder="Company Established Date" name="established" aria-label="Company Established Date">
+           
+            </div>
+            <div class="col">
+             
+                       <input type="text" required class="form-control" placeholder="Location countries" name="countries" aria-label="Location countries">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <input type="text" required class="form-control" placeholder="Location Cities" name="cities" aria-label="Location Cities">
+            </div>
+            <div class="col">
+              <input type="text" required class="form-control" name="telephone" placeholder="Contact Telephone No." aria-label="Contact Telephone No.">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <input type="number" required class="form-control" name="employees" placeholder="No. of Employees" aria-label="No. of Employees" style="width:165px">
+            </div>
+            <div class="col">
+              <input type="text" required class="form-control" name="address" placeholder="Address" aria-label="Address" style="width:630px">
+            </div>
+          </div>
+          
+          <button type="submit" class="btn">add</button>
+      </form>
+    </div>
+  
+  </div>
+</div>
+<!-- <script>
+  // Get the date input field
+  const dobInput = document.getElementById('dob');
+  
+  // Set the placeholder text
+  dobInput.placeholder = 'Enter date of birth';
+</script> -->
+</body>
+</html>

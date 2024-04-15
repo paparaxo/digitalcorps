@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/profile.css">
+    <title>Navbar with Sidebar</title>
+
+</head>
+<body>
+  {{navbar}}
+
+  <div class="container2">
+    <p style="text-align:center">User Profile Card</p>
+    <div class="card">
+    
+        <p style="text-align:center">User Profile Card</p>
+      <img src="../assets/svg/userprofile.svg" alt="John" style="width:100%;height:300px">
+      <h2><small class="title">Full Name</small>: {{fullname}}</h2>
+      <p class="title"><small>Username</small>: {{username}}</p>
+      <p><small>Email</small>: {{email}}</p>
+      <p><small>Address</small>: {{address}} </p>
+      <p><small>Country</small>: {{country}}</p>
+      <p><small>Gender</small>: {{gender}}</p>
+      <p><small>Date of birth:  </small>{{dob}}</p>
+    <p><small>Phone number</small>: {{phonenumber}}</p>
+      <br><br>
+      <h4>Type Of Software</h4>
+      <p style="font-size:medium;">{{typeofsoftware}}</p>
+      
+      <p><a href="./editprofile.html?id={{id}}"><button>Edit</button></a></p>
+    </div>
+    </div>
+    <div id="alertMessage" >
+      {{alerted}}
+     </div>
+</body>
+</html>

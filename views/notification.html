@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/viewproductist.css">
+  <title>Navbar with Sidebar</title>
+
+</head>
+<body>
+
+  {{navbar}}
+  <div class="container" >
+    <h1>Welcome to My Website</h1>
+   
+    <div style="margin-top: 50px;">
+    
+    <div class="background" style="width: 100%;">
+      
+        <div class="styled-box">
+          <div style="display: flex;justify-content: space-between;">
+          <h3 class="box-heading">Notification Messages</h3>
+          <!-- <a href="./addproduct.html"><button class="btn" style="background-color:#1f60aa">Add Product</button></a> -->
+      
+        </div>
+          <br>
+          <table  class="table table-striped table-hover" style="width: 100%;">
+           
+            <thead>
+              <tr>
+               
+                
+                <th scope="col">message</th>
+               
+                <th scope="col"> Date</th>
+                <th scope="col"> status</th>
+               
+              </tr>
+            </thead>
+            <tbody>
+             
+              {{productlist}}
+            </tbody>
+          </table>
+  </div>
+  </div>
+</div>
+  </div>
+</body>
+</html>

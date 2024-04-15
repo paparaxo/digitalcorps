@@ -1,0 +1,126 @@
+
+    /* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ 
+}
+
+
+/* Navbar styles */
+.navbar {
+  background: #2f5379;
+  background: -webkit-linear-gradient(to right, #29323c, #d8e1eb);
+  background: linear-gradient(to right, #1f60aa, #90abca);
+color: #fff;
+height: 80px;
+padding: 10px;
+display: flex;
+position: fixed;
+width: 100%;
+justify-content: space-between;
+}
+
+.navbar-brand {
+font-size: 1.5rem;
+}
+
+.navbar-toggler {
+background-color: transparent;
+border: none;
+cursor: pointer;
+color: #fff;
+font-size: 1.2rem;
+}
+
+/* Sidebar styles */
+.sidebar {
+  background: #2f5379;
+  background: -webkit-linear-gradient(to right, #29323c, #d8e1eb);
+  background: linear-gradient(to right, #1f60aa, #90abca);
+color: #fff;
+width: 200px;
+height: 100vh;
+position: fixed;
+top: 80px; /* Adjust according to the navbar height */
+ left: 0px; 
+transition: left 0.3s ease-in-out;
+}
+
+.sidebar-menu {
+list-style-type: none;
+padding: 20px;
+}
+
+.sidebar-menu li {
+margin-bottom: 20px;
+}
+
+.sidebar-menu li a {
+color: #fff;
+text-decoration: none;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family:fantasy !important;
+  padding: 20px;
+}
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 50%;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+    line-height: 30px;
+   
+  margin-top: 100px;
+  margin-bottom: 10px;
+  margin-left: 450px;
+    font-family:fantasy !important;
+
+  }
+  
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+  
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  /* a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+   */
+  button:hover, a:hover {
+    opacity: 0.7;
+  }
+
+  #alertMessage{
+    /* width:30% ; */
+    background-color: white;
+    position: fixed;
+    top: 4px;
+    left: 1075px;
+    border: 2px solid rgba(234, 236, 240, 1);
+    z-index: 100;
+   
+  }

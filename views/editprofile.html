@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../assets/css/editprofile.css">
+
+</head>
+<body>
+    <div class="login-container">
+      
+        <div ><h1 class="digid" style="background-color: black;color: #fff;text-align: center;"><b> <a href="./index.html" style="color: white;text-decoration: none;">DIGITALCORP</a></b></h1>
+            <h2>Edit profile</h2>
+    
+            <form action="#" method="POST" class="login-form" >
+                <input type="text" name="email" value="{{email}} " required   hidden>
+                <input type="text" name="id" value="{{id}} " required   hidden>
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" value="{{username}}" name="username" required   >
+                </div>
+                <div class="form-group">
+                    <label for="name">Enter your first name</label>
+                <input type="text" name="firstname" value="{{firstname}}" required  placeholder="First name" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="surname">Enter your surname/family name</label>
+                <input type="text" name="lastname" required  value="{{lastname}}"  placeholder="Last name" id="surname"> </div>
+                <div class="form-group">
+                    <label for="address">Enter your address</label>
+                <input type="text" name="address" required  value="{{address}}"  placeholder="address" id="address"></div>
+               <!-- [username,firstname,lastname,address,dateofbirth,phonenumber,gender,country] -->
+                <div class="form-group">
+                    <label for="DOB">Date of birth</label>
+                    <input type="date" name="dateofbirth" placeholder="Click to select" required  value="{{dateofbirth}}"  id="DOB">
+                    </div>
+                    <div class="form-group"> <label for="phone">Input phone number</label>
+                        <input type="text" name="phonenumber" placeholder="xx xxx xxx" required  value="{{phonenumber}}"  id="phone">
+                       </div>
+                    <div class="form-group">
+                        <label for="gender">Select gender</label>
+                        <select id="gender" name="gender" required    class="form-control" style="   height: 31px;width: 100%;">
+                            <!-- <option value="">--------select gender---------</option>
+                            <option value="male" selected>Male</option>
+                            <option value="female">Female</option> -->
+                    {{gender}}
+
+                        </select></div>
+                <div class="form-group">
+                    <label for="country">Select country of residence</label>
+    
+               
+                    <select id="country" name="country" required    class="form-control" style="   height: 31px;width: 100%;">
+<!--                         
+                            <option value="">--Select type of country--</option>
+                         
+                                  
+                                        <option value="2">England   </option>
+                                        <option value="1">scotland   </option>
+                                        -->
+                                 
+                    {{countryOption}}
+                     </select> </div>
+                     
+                     <div class="checkbox">
+                    
+                    <div>
+                        {{softwaretype}}
+                        <!-- <div class="row"> 
+                            <label for="v6">Portfolio Management Trading</label>
+                            <input type="checkbox" class="input3" name="z6" value="6" id="v6" style="margin-bottom: 28px;">
+                        </div>
+                        <div class="row">
+                            <label for="v5">Artificial Intelligence</label>
+                            <input type="checkbox" class="input3" name="z5" value="5" id="v5" style="margin-bottom: 28px;">
+                         </div>
+
+                    <div class="row">
+                        <label for="v4">Data Transformation</label>
+                        <input type="checkbox" class="input3"  name="z4" value="4" id="v4"  style="margin-bottom: 28px;">
+                    </div>
+                    <div class="row">
+                        <label for="v3">Data Management</label>
+                        <input type="checkbox" class="input3" name="z3" value="3" id="v3" style="margin-bottom: 28px;">
+                    </div>
+                    <div class="row">
+                        <label for="v2">Alternative Investment</label>
+                        <input type="checkbox" class="input3" name="z2" value="2" id="v2" style="margin-bottom: 28px;">
+                    </div>
+                    <div class="row">
+                        <label for="v1">Process Automation</label>
+                        <input type="checkbox" class="input3"  name="z1" value="1" id="v1" style="margin-bottom: 28px;">
+                    </div>
+                        -->
+                </div>
+    
+                <button type="submit">Submit</button>
+            </form>
+         </div>
+        
+    </div>
+</body>
+</html>

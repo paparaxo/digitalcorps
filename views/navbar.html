@@ -1,0 +1,23 @@
+<nav class="navbar">
+  <div style="width: 100%;display: flex; justify-content: space-between;align-self: center;padding:0 20px ;">
+  <div class="navbar-brand" ><a href="./index.html" style="color: white;text-decoration: none;">DIGITALCORP</a></div>
+  <div style="display: flex; justify-content: space-between; column-gap: 20px;">
+    <a class="navbar-brand" href="./notification.html" style="text-decoration: none;" ><img src="../assets/svg/notif4.svg" width="25px"><span style="padding: 3px;background-color: white;color: black; border-radius: 10px; font-size: small;">{{notifcount}}</span></a>
+  
+  <div class="navbar-brand"  >Welcome {{username}}!</div>
+</div>
+  </div>
+  <div class="sidebar">
+    <ul class="sidebar-menu">
+      <li><a href="./dashboard.html">Dashboard</a></li>
+     
+      {{adminsidebar}}
+      {{vendorsidebar}}
+      {{clientsidebar}}
+      <br>
+      <br>
+      
+      <li><a href="./logout">Log Out</a></li>
+    </ul>
+  </div>
+</nav>
